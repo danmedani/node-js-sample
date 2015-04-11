@@ -13,13 +13,13 @@ app.get('/', function(request, response) {
 	//Insert a book document in the books database
 	books.insert({name: 'The Art of war'}, null, function(err, body) {
 	  if (!err){
-	    console.log(body);
+	    response.send(body);
 	  }
 	});
 
 	//Get a list of all books
 	books.list(function(err, body){
-	  console.log(body.rows);
+	  response.send(body.rows);
 	}
 
 	
