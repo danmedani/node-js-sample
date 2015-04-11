@@ -22,8 +22,8 @@ app.get('/', function(request, response) {
 	  response.send(body.rows);
 	}
 
-	
-  response.send('Hello World!')
+
+  	response.send('Hello World!');
 })
 
 app.listen(app.get('port'), function() {
