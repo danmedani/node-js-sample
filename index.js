@@ -15,7 +15,7 @@ app.get('/', function(request, response) {
 	  if (!err){
 	    response.send(body)
 	  }
-	});
+	})
 
 	//Get a list of all books
 	books.list(function(err, body){
